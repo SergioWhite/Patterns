@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var WeatherData_1 = require("./WeatherData");
+var CurrentConditionsDisplay_1 = require("./CurrentConditionsDisplay");
+var StatisticDisplay_1 = require("./StatisticDisplay");
+var weatherData = new WeatherData_1.WeatherData();
+var currentDisplay = new CurrentConditionsDisplay_1.CurrentConditionsDisplay(weatherData);
+var statisticDisplay = new StatisticDisplay_1.StatisticDisplay(weatherData);
+weatherData.setMeasurements(80, 65, 30.4);
+weatherData.setMeasurements(82, 70, 29.2);
+weatherData.setMeasurements(78, 90, 29.2);
